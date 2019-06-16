@@ -143,7 +143,7 @@ $ chmod 644 .ssh/authorized_keys
 
 * Rename `project.py` to `__init__.py`
 ```
-mv project.py  __init__.py
+sudo mv project.py  __init__.py
 ```
 
 
