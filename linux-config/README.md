@@ -29,13 +29,13 @@ sudo apt-get upgrade
 
 * Edit `/etc/ssh/sshd_config` file by `sudo nano /etc/ssh/sshd_config`
 
-* Find line `Port 22` and it to `Port 2200`
+* Find line `Port 22` and change it to `Port 2200`
 * Save the change by `Control + X ` and exit from nano.
 * Restart SSH with ` sudo service ssh restart`
 
 ### Set up Uncomplicated Fire Wall (UFW)
 
-* Configure UDW to allow only incoming request from port2200(SSH), port80 (HTTP) and port123 (NTP).
+* Configure UFW to allow only incoming request from port2200(SSH), port80 (HTTP) and port123 (NTP).
 ```
 sudo ufw status
 sudo ufw allow 2200/tcp
